@@ -1,0 +1,82 @@
+.below {
+    color: gray;
+    font-weight: 200;
+    font-style: bold;
+  }
+  
+  
+  .view {
+    margin: 10px;
+    color: black;
+  }
+  
+  .aply {
+    border-color: cornflowerblue;
+    border-radius: 42%;
+    color: cornflowerblue;
+    font-size: 19px;
+  }
+  
+  .aply:hover {
+    background-color: cornflowerblue;
+    color: white;
+  }
+  
+  .search-icon {
+    position: absolute;
+    z-index: 20;
+    color: blue;
+    right: 1%;
+    top: 15px;
+  }
+  
+  .common:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 50px;
+    left: 0;
+    height: 5px;
+    background: cornflowerblue;
+  
+  }
+  
+  .common {
+    color: black;
+    margin-left: 116px;
+    font-size: 27px;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+    font-weight: 500;
+  
+  }
+  
+  
+  
+  .strong {
+    font-size: 17px;
+  }
+  
+  .name {
+    font-size: 15px;
+    color: gray;
+    font-weight: 200;
+  }
+  
+  .icon {
+    color: gray;
+  }
+  
+  .location {
+    font-size: 15px;
+    color: grey;
+    font-weight: 200;
+  }
+
+  .job-overview{
+    font-size: 30px;
+  }
+  .h4{
+    color: blue;
+  }

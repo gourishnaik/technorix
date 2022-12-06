@@ -1,0 +1,79 @@
+<nav class="navbar navbar-light bg-light ">
+    <div class="container pt-3">
+      <div class="form-group"></div>
+      <mat-form-field class="example-full-width" [style.width.px]=1300 appearance="outline">
+        <input matInput [(ngModel)]="term" placeholder="search for job">
+        <span class="fas fa-search search-icon"></span>
+      </mat-form-field>
+    </div>
+    <br>
+  
+  
+    <div class="container ">
+      <mat-form-field [style.width.px]=300 appearance="outline">
+        <mat-label>Department</mat-label>
+  <mat-select >
+          <mat-option  *ngFor="let opt of myemployee"[value]="department">{{opt.title}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <!---location-->
+     
+      <mat-form-field [style.width.px]=300 appearance="outline">
+        <mat-label >Location</mat-label>
+        <mat-select  >
+      <mat-option *ngFor="let opt of job"[value]="location">{{opt.location.city}}</mat-option>
+     
+        </mat-select>   
+      </mat-form-field>
+   
+  
+      <!---function-->
+      <mat-form-field [style.width.px]=300 appearance="outline">
+        <mat-label>Function</mat-label>
+        <mat-select>
+         <mat-option [value]="functions"> Customer Success </mat-option>
+          <mat-option [value]="functions"> Information Technology</mat-option>
+          <mat-option *ngFor="let opt of functiondata"[value]="functions">{{opt.title}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+    </div>
+  </nav>
+  
+       
+
+
+      <div *ngFor="let datas of job|filter:term">
+  
+        <strong class="common">{{datas.title}}</strong>
+        <div class="container mt-5">
+          <strong class="strong">{{datas.title}}</strong>
+          <div class="row mt-4">
+
+            <div class="col-10">
+              <mat-icon style="color:gray;font-size:19px"class="icon" aria-label="Example home icon">assessment</mat-icon>&nbsp;
+              <strong class="name">{{datas.title}}</strong>&nbsp;
+              <mat-icon style="color:gray;font-size:19px"aria-label="Example home icon">gps_fixed</mat-icon>&nbsp;
+            <!-- <strong class="location"value="location">verna {{datas.city}} </strong> &nbsp;&nbsp; -->
+          
+            <strong class="location">{{datas.location.city}} </strong> &nbsp;&nbsp;
+              <button mat-raised-button >FULL TIME</button>
+            </div>
+
+            <div class="col-2">
+              <a class="aply" href="{{datas.hostedUrl}}" target="_blank" button mat-stroked-button
+                color="primary">Apply </a>
+              <!-- <button class="view"routerLink="/view" mat-raised-button>view</button> -->
+              <button class="view"routerLink="/view/{{datas.id}}" mat-raised-button>view</button>
+             
+            </div>
+          </div>
+        </div>
+    
+
+
+   
+        {{apiresponse}}
+
+      

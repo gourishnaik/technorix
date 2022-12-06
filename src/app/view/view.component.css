@@ -1,0 +1,89 @@
+.a1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.location {
+    font-size: 15px;
+    color: grey;
+    font-weight: 200;
+  }
+  .name {
+    font-size: 15px;
+    color: gray;
+    font-weight: 200;
+  }
+
+  .aply {
+    border-color: cornflowerblue;
+    background: cornflowerblue;
+    font-size: 23px;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .common:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 50px;
+    left: 0;
+    height: 5px;
+    background: cornflowerblue;
+  
+  }
+  
+  .common {
+    color: black;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+    font-weight:500;
+    font-size:18px
+  }
+  
+  .icons{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 55px;
+ }
+
+ .icons li{
+    list-style: none;
+ }
+ .icons li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+ }
+
+ .icons li a .fa{
+    color: white;
+    font-size: 20px;
+ }
+ .icons li a .fa:hover{
+    color: cornflowerblue;
+   
+ }
+
+#job-overview{
+ display: block;
+}
+#ul-responsibilities-0{
+ color: aqua;
+ font-size: 35px;
+}
+#job-overview h4{
+  font-size: 18px;
+}
